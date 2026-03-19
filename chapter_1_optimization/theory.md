@@ -72,3 +72,23 @@ $$
 $$
 
 This shows that convexity is directly related to the spectral properties of the matrix.
+
+---
+
+## 6. Connection to Machine Learning
+Quadratic forms appear naturally in many machine learning problems.
+
+### Least Squares Regression
+The loss function for linear regression can be written as:
+
+$$
+L(w) = \frac{1}{2} (Xw - y)^T (Xw - y)
+$$
+
+Expanding this expression leads to a quadratic form in \( w \).  
+The convexity of the loss function ensures the existence of a global minimum.
+
+### Optimization Perspective
+When the Hessian matrix is positive definite, gradient-based optimization methods (such as gradient descent or Newton's method) are guaranteed to converge toward a unique global minimum.
+
+This explains why convexity plays a central role in modern machine learning theory.
