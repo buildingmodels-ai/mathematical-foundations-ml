@@ -25,7 +25,7 @@ Each chapter contains:
 This chapter introduces quadratic forms, gradients, Hessians, and convexity conditions.
 
 Key concepts:
-- Quadratic functions: \( f(x) = \frac{1}{2} x^T A x \)
+- Quadratic functions: $f(x) = \frac{1}{2} x^T A x$
 - Gradient computation
 - Hessian matrix
 - Convexity and positive semi-definite matrices
