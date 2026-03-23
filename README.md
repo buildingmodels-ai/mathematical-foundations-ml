@@ -40,22 +40,46 @@ This chapter develops the linear algebra foundations of least squares regression
 
 It focuses on solving overdetermined linear systems and understanding the role of projections in optimization.
 
-Key concepts:
+### Core Problem
 
-- Linear systems \( Xw = y \)
+We study linear systems of the form:
+
+$$
+Xw = y
+$$
+
+When the system is overdetermined ($n > d$), we solve:
+
+$$
+\min_{w \in \mathbb{R}^d} \|Xw - y\|^2
+$$
+
+### Key Concepts
+
+- Linear systems
 - Overdetermined problems
 - Least squares formulation
-- Derivation of the normal equations
-- Orthogonal projection onto column space
-- Rank condition and invertibility of \( X^T X \)
+- Derivation of the normal equations:
+
+$$
+X^T X w = X^T y
+$$
+
+- Orthogonal projection onto the column space of $X$
+- Rank condition and invertibility of $X^T X$
 - Moore–Penrose pseudo-inverse
 - Numerical stability and condition number
 
-The chapter connects linear algebra, geometry, and optimization theory.
+### Python Illustration
 
-A Python implementation illustrates:
+The chapter includes a numerical implementation showing:
 
 - Closed-form least squares solution
 - Comparison with NumPy's `lstsq`
-- Verification of orthogonality of the residual
+- Verification that:
+
+$$
+X^T (y - Xw^*) = 0
+$$
+
 - Computation of the condition number
