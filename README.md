@@ -32,3 +32,30 @@ Key concepts:
 - Relation between eigenvalues and convexity
 
 Theoretical results are supported with numerical examples in Python.
+
+---
+
+## Chapter 2 — Linear Algebra & Least Squares
+This chapter develops the linear algebra foundations of least squares regression and its geometric interpretation.
+
+It focuses on solving overdetermined linear systems and understanding the role of projections in optimization.
+
+Key concepts:
+
+- Linear systems \( Xw = y \)
+- Overdetermined problems
+- Least squares formulation
+- Derivation of the normal equations
+- Orthogonal projection onto column space
+- Rank condition and invertibility of \( X^T X \)
+- Moore–Penrose pseudo-inverse
+- Numerical stability and condition number
+
+The chapter connects linear algebra, geometry, and optimization theory.
+
+A Python implementation illustrates:
+
+- Closed-form least squares solution
+- Comparison with NumPy's `lstsq`
+- Verification of orthogonality of the residual
+- Computation of the condition number
