@@ -83,3 +83,55 @@ X^T (y - Xw^*) = 0
 $$
 
 - Computation of the condition number
+
+---
+
+## Chapter 3 — Eigenvalues & Principal Component Analysis
+
+This chapter develops the spectral foundations of dimensionality reduction.
+
+It introduces eigenvalues, orthogonal diagonalization, and their central role in Principal Component Analysis (PCA).
+
+### Core Concepts
+- Eigenvalues and eigenvectors:  
+  $A v = \lambda v$
+
+- Spectral theorem for symmetric matrices:  
+  $A = Q \Lambda Q^T$
+
+- Covariance matrix:
+
+  $$
+  \Sigma = \frac{1}{n} X^T X
+  $$
+
+- PCA as a constrained optimization problem:
+
+  $$
+  \max_{\|v\|=1} v^T \Sigma v
+  $$
+
+  leading to:
+
+  $$
+  \Sigma v = \lambda v
+  $$
+
+### Geometric Interpretation
+The principal components define orthogonal directions of maximal variance.
+
+Projection onto the first $k$ components:
+
+$$
+Z = X V_k
+$$
+
+### Python Illustration
+The chapter includes:
+
+- Computation of the covariance matrix  
+- Eigendecomposition  
+- Projection onto the first principal component  
+- Visualization of principal directions  
+
+This chapter connects linear algebra, optimization, and statistical learning theory.
