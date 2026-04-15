@@ -99,32 +99,21 @@ It introduces eigenvalues, orthogonal diagonalization, and their central role in
 - Spectral theorem for symmetric matrices:  
   $A = Q \Lambda Q^T$
 
-- Covariance matrix:
+- Covariance matrix:  
+  $\Sigma = \frac{1}{n} X^T X$
 
-  $$
-  \Sigma = \frac{1}{n} X^T X
-  $$
+- PCA as a constrained optimization problem:  
+  $\max_{\|v\|=1} v^T \Sigma v$
 
-- PCA as a constrained optimization problem:
+leading to:
 
-  $$
-  \max_{\|v\|=1} v^T \Sigma v
-  $$
-
-  leading to:
-
-  $$
-  \Sigma v = \lambda v
-  $$
+$\Sigma v = \lambda v$
 
 ### Geometric Interpretation
 The principal components define orthogonal directions of maximal variance.
 
-Projection onto the first $k$ components:
-
-$$
-Z = X V_k
-$$
+Projection onto the first $k$ components:  
+$Z = X V_k$
 
 ### Python Illustration
 The chapter includes:
